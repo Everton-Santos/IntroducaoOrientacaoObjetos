@@ -4,8 +4,12 @@ public class Triangle {
 	
 	public Triangle() {}
 	
-	double area;
-	double p;
+	public double a;
+	public double b;
+	public double c;
+	
+	private double area;
+	private double p;
 	
 	public Double AreaTriangulo(double a, double b, double c) {
 		p = ((a + b + c) / 2);
@@ -14,7 +18,7 @@ public class Triangle {
 	}
 	
 	public void CompararArea(double X, double Y) {
-		if(Math.max(X, Y) == X) {
+		if(X > Y) {
 			System.out.println("Large area: X");
 		}
 		else {

@@ -9,25 +9,26 @@ public class App {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Triangle t = new Triangle();
-		double a;
-		double b;
-		double c;
+		
+		Triangle t1, t2, t;
+		t1 = new Triangle();
+		t2 = new Triangle();
+		t = new Triangle();
 		
 		try {
 			
 			System.out.println("Enter the measures of triangle X:");
-			a = sc.nextDouble();
-			b = sc.nextDouble();
-			c = sc.nextDouble();
-			double X = t.AreaTriangulo(a, b, c);
+			t1.a = sc.nextDouble();
+			t1.b = sc.nextDouble();
+			t1.c = sc.nextDouble();
+			double X = t1.AreaTriangulo(t1.a, t1.b, t1.c);
 			System.out.println();
 			
 			System.out.println("Enter the measures of triangle Y:");
-			a = sc.nextDouble();
-			b = sc.nextDouble();
-			c = sc.nextDouble();
-			double Y = t.AreaTriangulo(a, b, c);
+			t2.a = sc.nextDouble();
+			t2.b = sc.nextDouble();
+			t2.c = sc.nextDouble();
+			double Y = t2.AreaTriangulo(t2.a, t2.b, t2.c);
 			System.out.println();
 			
 			System.out.printf("Triangle X area: %.4f \n", X);
