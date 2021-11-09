@@ -1,4 +1,4 @@
-package br.com.udemy.IntroducaoOrientacaoObjetos;
+package entities;
 
 public class Triangle {
 	
@@ -8,13 +8,11 @@ public class Triangle {
 	public double b;
 	public double c;
 	
-	private double area;
 	private double p;
 	
-	public Double AreaTriangulo(double a, double b, double c) {
+	public Double AreaTriangulo() {
 		p = ((a + b + c) / 2);
-		area = Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
-		return area;
+		return Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
 	}
 	
 	public void CompararArea(double X, double Y) {

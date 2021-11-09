@@ -1,9 +1,11 @@
-package br.com.udemy.IntroducaoOrientacaoObjetos;
+package application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class App {
+import entities.Triangle;
+
+public class AppTriangle {
 	
 	public static void main(String[] args) {
 		
@@ -21,14 +23,14 @@ public class App {
 			t1.a = sc.nextDouble();
 			t1.b = sc.nextDouble();
 			t1.c = sc.nextDouble();
-			double X = t1.AreaTriangulo(t1.a, t1.b, t1.c);
+			double X = t1.AreaTriangulo();
 			System.out.println();
 			
 			System.out.println("Enter the measures of triangle Y:");
 			t2.a = sc.nextDouble();
 			t2.b = sc.nextDouble();
 			t2.c = sc.nextDouble();
-			double Y = t2.AreaTriangulo(t2.a, t2.b, t2.c);
+			double Y = t2.AreaTriangulo();
 			System.out.println();
 			
 			System.out.printf("Triangle X area: %.4f \n", X);
